@@ -1,0 +1,23 @@
+B=True
+
+B
+Out[5]: True
+
+x=4+5j
+
+type(x)
+Out[7]: complex
+
+a=5.6
+
+str(a)
+Out[9]: '5.6'
+
+complex(a)
+Out[10]: (5.6+0j)
+
+bool(a)
+Out[11]: True
+
+type(str(a))
+Out[12]: str
