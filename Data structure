@@ -1,0 +1,41 @@
+tup =(4,5,8,2)
+
+type(tup)
+Out[14]: tuple
+
+tup[0]
+Out[15]: 4
+
+x=[2,5,6]
+
+tuple(x)
+Out[17]: (2, 5, 6)
+
+tuple("python")
+Out[18]: ('p', 'y', 't', 'h', 'o', 'n')
+
+tup1=tuple([4,5,[8,3],False])
+
+tup1
+Out[21]: (4, 5, [8, 3], False)
+
+tup1[2]
+Out[22]: [8, 3]
+
+a,b=tup1[2]
+
+a
+Out[24]: 8
+
+b
+Out[25]: 3
+
+(4,5)+("python","mindmap")+(8,3)
+Out[26]: (4, 5, 'python', 'mindmap', 8, 3)
+
+(5,2)*4
+Out[27]: (5, 2, 5, 2, 5, 2, 5, 2)
+
+tup1.count(4)
+Out[28]: 1
+
