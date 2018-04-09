@@ -1,0 +1,79 @@
+lst=[5,6,'rama']
+
+lst
+Out[30]: [5, 6, 'rama']
+
+type(lst)
+Out[31]: list
+
+lst.append("python")
+
+lst
+Out[33]: [5, 6, 'rama', 'python']
+
+lst[2]
+Out[34]: 'rama'
+
+lst.insert(2,"archana")
+
+lst
+Out[36]: [5, 6, 'archana', 'rama', 'python']
+
+lst.pop()
+Out[37]: 'python'
+
+
+lst.remove(6)
+
+lst
+Out[39]: [5, 'archana', 'rama']
+
+lst.extend([5,6])
+
+lst
+Out[41]: [5, 'archana', 'rama', 5, 6]
+
+x=[9,6,7,3]
+x.sort()
+
+x
+Out[45]: [3, 6, 7, 9]
+
+y=["hai","priya","r","pp"]
+
+y.sort(key=len)
+
+y
+Out[48]: ['r', 'pp', 'hai', 'priya']
+
+r=range(10)
+
+r
+Out[50]: range(0, 10)
+
+list(r)
+Out[51]: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+r=reversed(range(10))
+list(r)
+Out[54]: [9, 8, 7, 6, 5, 4, 3, 2, 1, 0]
+
+dict={"name":['latha','archana'],"dept":['it','hr']}
+
+dict['name']
+Out[61]: ['latha', 'archana']
+
+dict['dept']
+Out[62]: ['it', 'hr']
+
+dict[3]=12
+
+dict
+Out[64]: {3: 12, 'dept': ['it', 'hr'], 'name': ['latha', 'archana']}
+
+dict.keys()
+Out[65]: dict_keys(['name', 'dept', 3])
+
+dict.items()
+Out[66]: dict_items([('name', ['latha', 'archana']), ('dept', ['it', 'hr']), (3, 12)])
+
