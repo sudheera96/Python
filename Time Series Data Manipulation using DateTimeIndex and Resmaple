@@ -1,0 +1,21 @@
+import pandas as pd
+nifty = pd.read_csv("C:/Users/ADMIN/Desktop/niftydata.csv",parse_dates=["Date"],index_col="Date")
+nifty.head()
+nifty["2007-10-05" : "2007-10-20"]
+nifty["2015-05"].Close.min()
+nifty["2015-05"].Close.max()
+nifty['Close'].resample('M').mean()
+nifty['Close'].resample('W').mean()
+nifty['Close'].resample('Y').mean()
+
+%matplotlib inline
+nifty['Close'].plot()
+
+nifty['Close'].resample('M').mean().plot(kind='bar')
+
+or
+
+nifty['Close'].resample('A').mean().plot(kind='bar')
+
+
+nifty['2016'].Close.resample('M').mean().plot(kind='bar')
