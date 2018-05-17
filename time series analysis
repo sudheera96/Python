@@ -1,0 +1,12 @@
+from pandas import Series
+rent=Series.from_csv("C:/Users/ADMIN/Desktop/_retailnz.csv",header=0)
+rent.head()
+rent.tail()
+type(rent)
+rent['1995M05']
+rent.size
+rent.describe()
+
+from matplotlib import pyplot
+pyplot.plot(rent)
+pyplot.show()
