@@ -1,0 +1,33 @@
+import pandas as pd
+from pandas import Series
+nigty=pd.read_csv("C:/Users/ADMIN/Desktop/niftydata.csv",parse_dates=["Date"],index_col="Date")
+nifty_q=nigty.resample('Q').mean()
+nifty_q.head()
+from pandas.tools.plotting import autocorrelation_plot
+from matplotlib import pyplot
+%matplotlib inline
+
+autocorrelation_plot(nifty_q)
+pypolt.show()
+
+#p value can be 6 or 7
+
+from statsmodels.graphics.tsaplots import plot_pacf
+plot_pacf(nifty_q,lags=20)
+
+#q value 3
+
+from statsmodels.tsa.arima_model import ARIMA
+model=ARIMA(nifty_q,order=(6,2,2))
+model_fit=model.fit()
+print(model_fit.summary())
+
+model_fit.resid
+
+from pandas import DataFrame
+residules=model_fit.resid
+residules.plot()
+
+residules.plot(kind='kde')
+
+residules.describe()
