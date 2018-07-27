@@ -7,7 +7,6 @@ from pandas.tools.plotting import autocorrelation_plot
 from matplotlib import pyplot
 %matplotlib inline
 
-
 autocorrelation_plot(nifty_q)
 pypolt.show()
 
